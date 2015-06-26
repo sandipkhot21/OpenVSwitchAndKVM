@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#To be run on the 1st VM which is connected to the br0 and br1 openvswitches.
+
+
 #  IPTABLES  PROXY  script for the Linux 2.4 kernel.
 #  This script is a derivitive of the script presented in
 #  the IP Masquerade HOWTO page at:
@@ -65,7 +68,7 @@ EXTIF="eth0"
    #   UNCOMMENT the following EXTIP line and enter the
    #   IP address for the EXTIP variable:
 
-#EXTIP="192.168.3.11"
+EXTIP="192.168.4.11"
 
 
 
@@ -80,7 +83,7 @@ EXTIF="eth0"
 #         Note that if you are uncommenting these lines then
 #         the EXTIP line in Section B must be commented out.
 
-EXTIP="`/sbin/ifconfig eth0 | grep 'inet addr' | awk '{print $2}' | sed -e 's/.*://'`"
+#EXTIP="`/sbin/ifconfig eth0 | grep 'inet addr' | awk '{print $2}' | sed -e 's/.*://'`"
 
 
 # --------  No more variable setting beyond this point  --------

@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#Ongoing Work do not use
+
 MYP=/media/sandip/Common/PPSC;
 
 #Start the virtual Machine 00 & 10
