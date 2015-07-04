@@ -1,0 +1,11 @@
+[switch_0]
+switch_name=sw0
+port=eth0
+ip=192.168.4.11
+
+[switch_1]
+switch_name=sw1
+
+[switch_2]
+switch_name=sw2
+
